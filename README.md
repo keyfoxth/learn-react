@@ -1,2 +1,2 @@
 # learn-react
-Learning react.
+React的学习。
