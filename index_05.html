@@ -1,38 +1,38 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<script src="build/react.min.js"></script>
-		<script src="build/JSXTransformer.js"></script>
-	</head>
-	
-	<body>
-		<div id="test"></div>
+    <head>
+        <script src="build/react.min.js"></script>
+        <script src="build/JSXTransformer.js"></script>
+    </head>
+    
+    <body>
+        <div id="test"></div>
 
-		<script type="text/jsx">
-			var NotesList = React.createClass({
-				render: function(){
-					return (
-						<ol>
-						{
-							this.props.children.map(
-								function(child){
-									return <li>{child}</li>
-								}
-							)
-						}
-						</ol>
-					);
-				}
-			});
+        <script type="text/jsx">
+            var NotesList = React.createClass({
+                render: function(){
+                    return (
+                        <ol>
+                        {
+                            this.props.children.map(
+                                function(child){
+                                    return <li>{child}</li>
+                                }
+                            )
+                        }
+                        </ol>
+                    );
+                }
+            });
 
-			React.render(
-				<NotesList>
-					<span>Wang</span>
-					<span>Zhang</span>
-					<span>Li</span>
-				</NotesList>,
-				document.body
-			);
-		</script>
-	</body>
+            React.render(
+                <NotesList>
+                    <span>Wang</span>
+                    <span>Zhang</span>
+                    <span>Li</span>
+                </NotesList>,
+                document.body
+            );
+        </script>
+    </body>
 </html>
