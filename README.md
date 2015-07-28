@@ -1,2 +1,1 @@
-# learn-react
-React的学习。
+# test-react
